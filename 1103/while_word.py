@@ -1,5 +1,5 @@
 # 空のリスト作成
-array = []
+a = []
 
 while True:
     str = input("単語を入力してください：")
@@ -9,12 +9,12 @@ while True:
         break
     # LISTと打たれたらリストを表示
     if str == "LIST":
-        print(f"{array}")
+        print(f"{a}")
         continue
     # 登録済みかどうか
-    if str in array:
+    if str in a:
         print("すでに登録済みです")
     # 登録済みじゃなければリストに追加
     else:
-        array.append(str)
-print("これまでに覚えた単語：{0}".format(array))
+        a.append(str)
+print("これまでに覚えた単語：{0}".format(a))
